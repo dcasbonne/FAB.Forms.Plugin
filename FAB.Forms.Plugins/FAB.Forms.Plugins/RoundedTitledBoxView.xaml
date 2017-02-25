@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		xmlns:local="clr-namespace:FAB.Forms.Plugins"
+		x:Class="FAB.Forms.Plugins.RoundedTitledBoxView"
+		x:Name="rootElement"
+		HorizontalOptions="End">
+	<ContentView.Content>
+		<StackLayout Orientation="Horizontal">
+			<Frame x:Name="labelFrame" BackgroundColor="#333333" VerticalOptions="Center" HorizontalOptions="Center" Margin="{Binding Path=FrameMargin, Source={x:Reference rootElement}}" Padding="10,6" CornerRadius="10">
+				<Label Text="{Binding Path=Title, Source={x:Reference rootElement}}" TextColor="White" LineBreakMode="TailTruncation" x:Name="labelTitle"/>
+			</Frame>
+			<local:RoundedBoxView DisableClickEffect="true" Command="{Binding Path=InternalCommand, Source={x:Reference rootElement}}" BackgroundColor="{Binding Path=ButtonBackgroundColor, Source={x:Reference rootElement}}" MenuImageSource="{Binding Path=MenuImageSource, Source={x:Reference rootElement}}" ButtonSize="{Binding Path=ButtonSize, Source={x:Reference rootElement}}"/>
+		</StackLayout>
+	</ContentView.Content>
+</ContentView>

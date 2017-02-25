@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		xmlns:local="clr-namespace:FAB.Forms.Plugins"
+		x:Class="FAB.Forms.Plugins.FloatingActionButton"
+		x:Name="rootElement">
+	<ContentView.Content>
+		<Grid>
+
+			<ContentView Content="{Binding Path=PageContent, Source={x:Reference rootElement}}" />
+			
+			<BoxView x:Name="lockBox" BackgroundColor="Transparent" IsVisible="{Binding Path=IsMenuVisible, Source={x:Reference rootElement}}" />
+						
+			<StackLayout VerticalOptions="End" HorizontalOptions="End"
+         		RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.8}"
+         		RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.8}"
+					Margin="0,0,20,20">
+				<StackLayout x:Name="MenuContainer" IsVisible="{Binding Path=IsMenuVisible, Source={x:Reference rootElement}}">
+					<!-- Contenu généré dynamiquement par le code behind par la méthode BuildFABMenu -->
+				</StackLayout>
+				<local:RoundedBoxView IgnoreDefaultLayoutOptions="true" BackgroundColor="{Binding Path=MainButtonBackgroundColor, Source={x:Reference rootElement}}" MenuImageSource="{Binding Path=MainButtonMenuImageSource, Source={x:Reference rootElement}}" x:Name="mainButton" VerticalOptions="Center" HorizontalOptions="End"/>
+      </StackLayout>
+		</Grid>
+	</ContentView.Content>
+</ContentView>
