@@ -1,23 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-		xmlns:local="clr-namespace:FAB.Forms.Plugins.Sample" 
-		xmlns:FAB="clr-namespace:FAB.Forms.Plugins;assembly=FAB.Forms.Plugins" 
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		xmlns:local="clr-namespace:FAB.Forms.Plugins.Sample"
+		xmlns:FAB="clr-namespace:FAB.Forms.Plugins;assembly=FAB.Forms.Plugins"
 		x:Class="FAB.Forms.Plugins.Sample.SamplePage"
 		Title="FAB Sample">
-	<FAB:FloatingActionButton MainButtonMenuImageSource="add.png" MainButtonBackgroundColor="Lime" HasMenu="true">
-		<FAB:FloatingActionButton.MenuItems>
-			<FAB:FloatingActionButtonMenuItem x:Name="fabmenu1" Title="Menu item 1" ButtonBackgroundColor="Black" MenuImageSource="add.png" />
-			<FAB:FloatingActionButtonMenuItem x:Name="fabmenu2" Title="Menu item 2" ButtonBackgroundColor="Navy" MenuImageSource="add.png" />
-			<FAB:FloatingActionButtonMenuItem x:Name="fabmenu3" ButtonBackgroundColor="Olive" MenuImageSource="add.png" />
-			<FAB:FloatingActionButtonMenuItem x:Name="fabmenu4" ShowTitle="false" Title="Menu item 4" ButtonBackgroundColor="Aqua" MenuImageSource="add.png" />
-			<FAB:FloatingActionButtonMenuItem x:Name="fabmenu5" Title="Menu item 5" ButtonBackgroundColor="Red" MenuImageSource="add.png" />
-		</FAB:FloatingActionButton.MenuItems>
+  <FAB:FloatingActionButton MainButtonMenuImageSource="add.png" MainButtonBackgroundColor="Lime" HasMenu="true">
+    <FAB:FloatingActionButton.MenuItems>
+      <FAB:FloatingActionButtonMenuItem x:Name="fabmenu1" Title="Menu item 1" ButtonBackgroundColor="Black" MenuImageSource="add.png" />
+      <FAB:FloatingActionButtonMenuItem x:Name="fabmenu2" Title="Menu item 2" ButtonBackgroundColor="Navy" MenuImageSource="add.png" />
+      <FAB:FloatingActionButtonMenuItem x:Name="fabmenu3" ButtonBackgroundColor="Olive" MenuImageSource="add.png" />
+      <FAB:FloatingActionButtonMenuItem x:Name="fabmenu4" ShowTitle="false" Title="Menu item 4" ButtonBackgroundColor="Aqua" MenuImageSource="add.png" />
+      <FAB:FloatingActionButtonMenuItem x:Name="fabmenu5" Title="Menu item 5" ButtonBackgroundColor="Red" MenuImageSource="add.png" />
+    </FAB:FloatingActionButton.MenuItems>
 
-		<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-			<Label Text="Welcome to Xamarin Forms! en double pour tester la longueur et voir ce que ca fait " />
-			<FAB:RoundedBoxView Margin="0,10,0,0" BackgroundColor="Green" ButtonSize="Default" MenuImageSource="add.png" />
-			<FAB:RoundedTitledBoxView Margin="0,10,0,0" Title="Titre démo" MenuImageSource="add.png" ButtonBackgroundColor="Fuchsia" ButtonSize="Default" HorizontalOptions="Center" />
-		</StackLayout>
-	</FAB:FloatingActionButton>
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+      <Frame BackgroundColor="Teal" CornerRadius="20">
+        <Label Text="Welcome to Xamarin Forms! en double pour tester la longueur et voir ce que ca fait " />
+      </Frame>
+      <FAB:RoundedBoxView Margin="0,10,0,0" BackgroundColor="Green" ButtonSize="Default" MenuImageSource="add.png" />
+      <FAB:RoundedTitledBoxView Margin="0,10,0,0" Title="Titre démo" MenuImageSource="add.png" ButtonBackgroundColor="Fuchsia" ButtonSize="Default" HorizontalOptions="Center" />
+    </StackLayout>
+  </FAB:FloatingActionButton>
 </ContentPage>

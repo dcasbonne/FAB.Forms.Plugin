@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Sample/Droid/bin/Debug
+/Sample/Droid/obj/Debug
+/Sample/FAB.Forms.Plugins.Sample/bin/Debug
+/Sample/FAB.Forms.Plugins.Sample/obj/Debug
+/Sample/FAB.Forms.Plugins.Sample.UWP/bin/x86/Debug
+/Sample/FAB.Forms.Plugins.Sample.UWP/obj/x86/Debug
+/Sample/FAB.Forms.Plugins.Sample.WinPhone/bin/Debug
+/Sample/FAB.Forms.Plugins.Sample.WinPhone/obj/Debug
+/Sample/iOS/bin/iPhoneSimulator/Debug
+/Sample/iOS/obj/iPhoneSimulator/Debug
